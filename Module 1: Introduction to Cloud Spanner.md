@@ -2,7 +2,8 @@
 
 **Google Cloud Spanner** is a fully managed, **globally distributed**, and **strongly consistent relational database service** provided by Google Cloud. It is unique in combining the benefits of traditional relational databases—such as support for SQL queries, schemas, and ACID transactions—with the horizontal scalability and high availability typically found in NoSQL systems.
 
-                                                ![image](https://github.com/user-attachments/assets/17b57f33-ff7b-43fc-8428-af776e345577)
+![image](https://github.com/user-attachments/assets/5550e510-ad40-46cb-aa9d-e438f1d421a7)
+
 
 
 
