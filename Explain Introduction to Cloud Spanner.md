@@ -1,5 +1,3 @@
-# Explain Introduction to Cloud Spanner with example and use cases
-
 **Introduction to Cloud Spanner**
 
 **Google Cloud Spanner** is a fully managed, **globally distributed**, and **strongly consistent relational database service** provided by Google Cloud. It is unique in combining the benefits of traditional relational databases—such as support for SQL queries, schemas, and ACID transactions—with the horizontal scalability and high availability typically found in NoSQL systems.
