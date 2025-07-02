@@ -27,7 +27,7 @@ To **set up a Cloud Spanner instance using the gcloud command**, follow these es
      --description="test-instance" \
      --nodes=1
    ```
-   This command creates an instance named "Test Instance" with 1 node in the `us-central1` region.[2][3][4]
+   This command creates an instance named "Test Instance" with 1 node in the `us-central1` region.
 
 3. **Optional: Use processing units instead of nodes**  
    For smaller instances, you can specify processing units (in multiples of 100 up to 1000, then multiples of 1000):
@@ -37,7 +37,7 @@ To **set up a Cloud Spanner instance using the gcloud command**, follow these es
      --description="test-instance" \
      --processing-units=500
    ```
-   Do not use both `--nodes` and `--processing-units` in the same command.[2]
+   Do not use both `--nodes` and `--processing-units` in the same command.
 
 4. **Optional: Specify edition and backup schedule**  
    For advanced configurations, such as selecting an edition (e.g., `STANDARD`, `ENTERPRISE`, `ENTERPRISE_PLUS`) or setting a default backup schedule:
