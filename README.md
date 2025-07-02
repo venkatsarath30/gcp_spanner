@@ -2,7 +2,7 @@ Module 1: Introduction to Cloud Spanner
 
 Module 2: Cloud Spanner Architecture & Core Concepts
 
-Module 3: Setting Up Cloud Spanner Instances
+Module 3: Setting Up Cloud Spanner Instance
 
 Module 4: Database and Schema Design in Spanner
 
