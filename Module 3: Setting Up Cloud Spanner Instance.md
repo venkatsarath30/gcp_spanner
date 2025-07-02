@@ -5,7 +5,7 @@ To **set up a Cloud Spanner instance using the gcloud command**, follow these es
    ```bash
    gcloud spanner instance-configs list
    ```
-   Example output will show configurations like `regional-us-central1`, `regional-europe-west1`, etc.[1]
+   Example output will show configurations like `regional-us-central1`, `regional-europe-west1`, etc.
 
 2. **Run the instance creation command**  
    Use the following syntax:
@@ -18,13 +18,13 @@ To **set up a Cloud Spanner instance using the gcloud command**, follow these es
    - `INSTANCE_ID`: Unique identifier for your instance (cannot be changed later).
    - `INSTANCE_CONFIG`: Chosen from the list in step 1 (e.g., `regional-us-central1`).
    - `INSTANCE_NAME`: Display name for the instance.
-   - `NODE_COUNT`: Number of nodes (each node provides 1000 processing units).[2][3][4]
+   - `NODE_COUNT`: Number of nodes (each node provides 1000 processing units).
 
    **Example:**
    ```bash
    gcloud spanner instances create test-instance \
-     --config=regional-us-central1 \
-     --description="Test Instance" \
+     --config=regional-asia-east1 \
+     --description="test-instance" \
      --nodes=1
    ```
    This command creates an instance named "Test Instance" with 1 node in the `us-central1` region.[2][3][4]
@@ -33,8 +33,8 @@ To **set up a Cloud Spanner instance using the gcloud command**, follow these es
    For smaller instances, you can specify processing units (in multiples of 100 up to 1000, then multiples of 1000):
    ```bash
    gcloud spanner instances create test-instance \
-     --config=regional-us-central1 \
-     --description="Test Instance" \
+     --config=regional-asia-east1 \
+     --description="test-instance" \
      --processing-units=500
    ```
    Do not use both `--nodes` and `--processing-units` in the same command.[2]
@@ -44,19 +44,19 @@ To **set up a Cloud Spanner instance using the gcloud command**, follow these es
    ```bash
    gcloud spanner instances create test-instance \
      --edition=STANDARD \
-     --config=regional-us-central1 \
-     --description="Test Instance" \
+     --config=regional-asia-east1 \
+     --description="asia-east1" \
      --nodes=1 \
      --default-backup-schedule-type=AUTOMATIC
    ```
-   - `--default-backup-schedule-type` can be `AUTOMATIC` or `NONE`.[2][5]
+   - `--default-backup-schedule-type` can be `AUTOMATIC` or `NONE`.
 
 5. **Verify the instance creation**  
    After running the command, you should see:
    ```
    Creating instance...done.
    ```
-   This confirms your Cloud Spanner instance is ready for use.[2][4]
+   This confirms your Cloud Spanner instance is ready for use.
 
 **Note:**  
 - You must have the Google Cloud CLI installed and authenticated before running these commands.
